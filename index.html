@@ -6,10 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 1-02 Quest</title>
 
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            height: 120px;
+            display: block;
+            text-align: center;
+        }
+        .header_li{
+            display: inline-block;
+            height: 53px;
+            
+            margin-right: 80px;
+        }
+        .header_li_none{
+            list-style-type: none;
+        }
+        .header_li:hover{
+            color: red;
+            text-decoration-color: black;
+            text-decoration-line: underline;
+        }
+        .main_picture{
+            height: 464px;
+            width:  100%;
+        }
+        #icon_title{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #icon_box{
+            width: 1240px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .icon_box_paragraph{
+            display: inline-block;
+            width: 250px;
+            margin-right: 60px;
+            font-size: 14;
+        }
+        
+
+    </style>
+
 </head>
 
 <body>
-    <img src="/img/chef.png">
+    <div id="header">
+        <ul>
+            <li class="header_li header_li_none">
+                How it works
+            </li>
+            <li class="header_li header_li_none">
+                Gifts
+            </li>
+            <a href="/src/about.html" style="text-decoration-line: none; color: black;">
+                <li class="header_li header_li_none">
+                    Abouts
+                </li>
+            </a>
+            <li class="header_li header_li_none">
+                <img src="/img/logo.png" style="margin-top: 33px;">
+            </li>
+            <li class="header_li header_li_none">
+                Login
+            </li>
+            <li class="header_li header_li_none">
+                Members
+            </li>
+            <li class="header_li header_li_none">
+                Contracts
+            </li>
+        </ul>
+    </div>
+
+    <img src="/img/main.png">
+
+    <div id="icon_title">
+        <span style="font-size: 10px;">WHAT FOR DINNER</span><br>
+        <strong><span style="font-size: 20px;">FINALLY HAS AN</span></strong><br>
+        <strong><span style="font-size: 20px;">EASY ANWSER</span></strong>
+    </div>
+
+    <div id="icon_box">
+        <p class="icon_box_paragraph">
+            <img src="/img/icon1.png"><br>
+            Lorem ipsum dolor sit amet. consectetur
+            adipisicing elit. sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua.
+        </p><p class="icon_box_paragraph">
+            <img src="/img/icon1.png"><br>
+            Lorem ipsum dolor sit amet. consectetur
+            adipisicing elit. sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua.
+        </p><p class="icon_box_paragraph">
+            <img src="/img/icon1.png"><br>
+            Lorem ipsum dolor sit amet. consectetur
+            adipisicing elit. sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua.
+        </p><p class="icon_box_paragraph">
+            <img src="/img/icon1.png"><br>
+            Lorem ipsum dolor sit amet. consectetur
+            adipisicing elit. sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua.
+        </p>
+    </div>
 
 
 </body>

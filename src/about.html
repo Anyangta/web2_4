@@ -6,10 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 1-02 Quest_about</title>
 
-    
+    <style>
+        *{
+            font-size: 14px;
+            font-family: '맑은 고딕', 'Malgun Gothic', sans-serif;
+        }
+        #top{
+            height: 500px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        .top_left_container{
+            float: left;
+        }
+        .top_right_container {
+            float: right;
+        }
+        .top_right_img {
+            display: block;
+        }
+        .top_left_paragraph {
+            clear: both;
+            width: 210px;
+            height: 210px;
+            margin-top: -230px;
+            padding: 20px;
+        }
+        #box_all{
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+        }
+        .box_all_left_box{
+            float: left;
+            width: 750px;
+            height: 500px;
+            overflow: hidden;
+        }
+        .box_all_left_inerbox{
+            height: 250px;
+            width: 250px;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div id="top">
+        <div class="top_left_container">
+            <img src="/img/chef_about.png">
+            <p class="top_left_paragraph"><strong>GLOBAL<br>BUSINESS</strong></p>
+            <br><br>
+            <p class="top_left_paragraph">
+                Lorem ipsum dolor sit amet. consectetur
+                adipisicing elit. sed do eiusmod tempor
+                incididunt ut labore et dolore magna
+                aliqua.
+            </p>
+        </div>
+        <div class="top_right_container">
+            <img src="/img/right1.png" class="top_right_img">
+            <img src="/img/right2.png" class="top_right_img">
+        </div>
+    </div>
+
+    <div id="box_all">
+        <div class="box_all_left_box">
+            <div class="box_all_left_inerbox" style="background-color: aqua;">
+
+            </div>
+        </div>
+    </div>
 
 </body>

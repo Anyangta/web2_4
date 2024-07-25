@@ -44,10 +44,36 @@
             width: 750px;
             height: 500px;
             overflow: hidden;
+            line-height: 0;
         }
         .box_all_left_inerbox{
+            display: inline-block;
             height: 250px;
             width: 250px;
+            overflow: hidden;
+        }
+        .box_all_left_paragraph{
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+        }
+        .box_all_right_box{
+            float: right;
+            width: 250px;
+            height: 500px;
+            overflow: hidden;
+        }
+        #footer{
+            width: 750px;
+            height: 40px;
+            margin-left: 300px;
+        }
+        .footer_paragraph{
+            display: inline-block;
+        }
+        .vertical-bar {
+            color: orange;
+            display: inline-block;
         }
     </style>
 </head>
@@ -57,8 +83,7 @@
         <div class="top_left_container">
             <img src="/img/chef_about.png">
             <p class="top_left_paragraph"><strong>GLOBAL<br>BUSINESS</strong></p>
-            <br><br>
-            <p class="top_left_paragraph">
+            <p class="top_left_paragraph" style="padding-top: 40px;">
                 Lorem ipsum dolor sit amet. consectetur
                 adipisicing elit. sed do eiusmod tempor
                 incididunt ut labore et dolore magna
@@ -73,10 +98,42 @@
 
     <div id="box_all">
         <div class="box_all_left_box">
-            <div class="box_all_left_inerbox" style="background-color: aqua;">
+            <div class="box_all_left_inerbox" style="background-color: aqua;">    
+                <p class="box_all_left_paragraph"><strong>Title</strong></p>
+                <p class="box_all_left_paragraph">
+                    Lorem ipsum dolor sit amet. consectetur
+                    adipisicing elit. sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div><div class="box_all_left_inerbox" style="background-color: antiquewhite;">
+
+            </div><div class="box_all_left_inerbox" style="background-color: aqua;">
+
+            </div><div class="box_all_left_inerbox" style="background-color: antiquewhite;">
+
+            </div><div class="box_all_left_inerbox" style="background-color: aqua;">
+
+            </div><div class="box_all_left_inerbox" style="background-color: antiquewhite;">
 
             </div>
-        </div>
+        </div><div class="box_all_right_box" style="background-color: aquamarine;"></div>
+
     </div>
+
+    <div id="footer">
+        <p class="footer_paragraph">법적고지</p>
+        <strong class="vertical-bar">|</strong>
+        <p class="footer_paragraph">이메일무단수집거부</p>
+        <strong class="vertical-bar">|</strong>
+        <p class="footer_paragraph">이용약관</p>
+        <strong class="vertical-bar">|</strong>
+        <p class="footer_paragraph">개인정보취급방침</p>
+        <strong class="vertical-bar">|</strong>
+        <p class="footer_paragraph">고갭센터</p>
+        <strong class="vertical-bar">|</strong>
+        <p class="footer_paragraph">입찰공고</p>
+    </div>
+
 
 </body>

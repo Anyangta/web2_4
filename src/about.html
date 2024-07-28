@@ -7,32 +7,31 @@
     <title>Web 1-02 Quest_about</title>
 
     <style>
-        *{
+        body{
+            margin-top: 30px;
             font-size: 14px;
-            font-family: '맑은 고딕', 'Malgun Gothic', sans-serif;
+            font-family: 'Malgun Gothic', '맑은 고딕', '돋움', sans-serif;
         }
         #top{
-            height: 500px;
             width: 1000px;
+            height: 500px;
             margin: auto;
-            margin-top: 30px;
-            overflow: hidden;
         }
-        .top_left_container{
+        .top_left_box{
             float: left;
+            width: 750px;
+            height: 500px;
         }
-        .top_right_container {
+        .top_right_box{
             float: right;
+            width: 250px;
+            height: 500px;
         }
-        .top_right_img {
-            display: block;
-        }
-        .top_left_paragraph {
-            clear: both;
+        .top_left_box_paragraph{
             width: 210px;
             height: 210px;
-            margin-top: -230px;
             padding: 20px;
+            margin-top: -253px;
         }
         #box_all{
             width: 1000px;
@@ -43,103 +42,100 @@
             float: left;
             width: 750px;
             height: 500px;
-            overflow: hidden;
         }
         .box_all_left_inerbox{
             display: inline-block;
-            height: 250px;
             width: 250px;
+            height: 250px;
+            margin-right: -5px;
+            background-color: blue;
             overflow: hidden;
         }
-        .box_all_left_paragraph{
-            display: inline-block;
+        .box_all_left_inerbox_paragraph{
             width: 210px;
             height: 210px;
-            margin-top: 20px;
-            margin-left: 20px;
+            padding: 20px;
         }
         .box_all_right_box{
             float: right;
             width: 250px;
             height: 500px;
-            overflow: hidden;
+            background-color: aqua;
         }
         #footer{
+            width: 1000px;
+            height: 40px;
+            margin: auto;
+        }
+        .footer_box{
             width: 750px;
             height: 40px;
-            margin-left: 300px;
+        }
+        .footer_vertical_bar {
+            color: orange;
         }
         .footer_paragraph{
             display: inline-block;
         }
-        .vertical-bar {
-            color: orange;
-            display: inline-block;
-        }
     </style>
+
 </head>
 
 <body>
     <div id="top">
-        <div class="top_left_container">
+        <div class="top_left_box">
             <img src="/img/chef_about.png">
-            <p class="top_left_paragraph"><strong>GLOBAL<br>BUSINESS</strong></p>
-            <p class="top_left_paragraph" style="padding-top: 40px;">
+            <div class="top_left_box_paragraph">
+                <span style="font-weight: bold;">GLOBAL<br>BUSINESS</span><br><br>
                 Lorem ipsum dolor sit amet. consectetur
                 adipisicing elit. sed do eiusmod tempor
                 incididunt ut labore et dolore magna
                 aliqua.
-            </p>
+            </div>
         </div>
-        <div class="top_right_container">
-            <img src="/img/right1.png" class="top_right_img">
-            <img src="/img/right2.png" class="top_right_img">
+        <div class="top_right_box">
+            <img src="/img/right1.png">
+            <img src="/img/right2.png" style="margin-top: -3px;">
         </div>
     </div>
-
+    
     <div id="box_all">
         <div class="box_all_left_box">
-            <div class="box_all_left_inerbox" style="background-color: aqua;">    
-                <p class="box_all_left_paragraph"><strong>Title</strong><br><br>
-                
+            <div class="box_all_left_inerbox">
+                <div class="box_all_left_inerbox_paragraph">
+                    <span style="font-weight: bold; text-decoration: underline;">Title</span><br><br>
                     Lorem ipsum dolor sit amet. consectetur
                     adipisicing elit. sed do eiusmod tempor
                     incididunt ut labore et dolore magna
                     aliqua.
-                </p>
-            </div><div class="box_all_left_inerbox" style="background-color: antiquewhite;">
-                <p class="box_all_left_paragraph"><strong>Title</strong><br><br>
-                    Lorem ipsum dolor sit amet. consectetur
-                    adipisicing elit. sed do eiusmod tempor
-                    incididunt ut labore et dolore magna
-                    aliqua.
-                </p>
-            </div><div class="box_all_left_inerbox" style="background-color: aqua;">
-
-            </div><div class="box_all_left_inerbox" style="background-color: antiquewhite; margin-top: -4px;">
-
-            </div><div class="box_all_left_inerbox" style="background-color: aqua;">
-
-            </div><div class="box_all_left_inerbox" style="background-color: antiquewhite;">
-
+                </div>
             </div>
-        </div><div class="box_all_right_box" style="background-color: aquamarine;"></div>
-
+            <div class="box_all_left_inerbox" style="background-color: blanchedalmond;">
+                <div class="box_all_left_inerbox_paragraph">
+                    <span style="font-weight: bold; text-decoration: underline;">Title</span><br><br>
+                    Lorem ipsum dolor sit amet. consectetur
+                    adipisicing elit. sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </div>
+            </div>
+            <div class="box_all_left_inerbox"></div>
+            <div class="box_all_left_inerbox" style="margin-top: -3px; background-color: blanchedalmond;"></div>
+            <div class="box_all_left_inerbox" style="margin-top: -3px;"></div>
+            <div class="box_all_left_inerbox" style="margin-top: -3px; background-color: blanchedalmond;"></div>
+        </div>
+        <div class="box_all_right_box"></div>
     </div>
 
     <div id="footer">
-        <p class="footer_paragraph">법적고지</p>
-        <strong class="vertical-bar">|</strong>
-        <p class="footer_paragraph">이메일무단수집거부</p>
-        <strong class="vertical-bar">|</strong>
-        <p class="footer_paragraph">이용약관</p>
-        <strong class="vertical-bar">|</strong>
-        <p class="footer_paragraph">개인정보취급방침</p>
-        <strong class="vertical-bar">|</strong>
-        <p class="footer_paragraph">고갭센터</p>
-        <strong class="vertical-bar">|</strong>
-        <p class="footer_paragraph">입찰공고</p>
+        <div class="footer_box">
+            <p class="footer_paragraph" style="margin-left: 30px;">법적고지 <strong class="footer_vertical_bar">|</strong></p>
+            <p class="footer_paragraph">이메일무단수집거부 <strong class="footer_vertical_bar">|</strong></p>
+            <p class="footer_paragraph">이용약관 <strong class="footer_vertical_bar">|</strong></p>
+            <p class="footer_paragraph">개인정보취급방침 <strong class="footer_vertical_bar">|</strong></p>
+            <p class="footer_paragraph">고객센터 <strong class="footer_vertical_bar">|</strong></p>
+            <p class="footer_paragraph">입찰공고</p>
+        </div>
     </div>
-
 
 </body>

@@ -13,149 +13,41 @@
         }
         #header{
             height: 120px;
-            display: block;
             text-align: center;
-            margin: auto;
+        }
+        .header_ul{
+            height: 53px;
         }
         .header_li{
-            display: inline-block;
-            height: 53px;
-            
+            display: inline;
             margin-right: 80px;
-        }
-        .header_li_none{
-            list-style-type: none;
         }
         .header_li:hover{
             color: red;
             text-decoration-color: black;
             text-decoration-line: underline;
         }
-        .main_picture{
-            height: 464px;
-            width:  100%;
+        .header_li_a{
+            text-decoration: none; 
+            color: inherit;
         }
-        #icon_title{
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        #icon_box{
-            width: 1240px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin: auto;
-        }
-        .icon_box_paragraph{
-            display: inline-block;
-            width: 250px;
-            margin-right: 60px;
-            font-size: 14;
-            text-align: center;
-        }
-        #chefs{
-            height: 304px;
-            background-color:   #ececec;
-        }
-        .chefs_paragraph_box{
-            width: 771px;
-            height: 304px;
-            margin: auto;
-        }
-        .chefs_paragraph_inerbox{
-            display: inline;
-            float: left;
-            width: 500px;
-            margin-right: 30px;   
-        }
-
-
     </style>
 
 </head>
 
 <body>
+    
     <div id="header">
-        <ul>
-            <li class="header_li header_li_none">
-                How it works
-            </li>
-            <li class="header_li header_li_none">
-                Gifts
-            </li>
-            <a href="/src/about.html" style="text-decoration-line: none; color: black;">
-                <li class="header_li header_li_none">
-                    Abouts
-                </li>
-            </a>
-            <li class="header_li header_li_none">
-                <img src="/img/logo.png" style="margin-top: 33px;">
-            </li>
-            <li class="header_li header_li_none">
-                Login
-            </li>
-            <li class="header_li header_li_none">
-                Members
-            </li>
-            <li class="header_li header_li_none">
-                Contracts
-            </li>
+        <ul class="header_ul">
+            <li class="header_li">How it works</li>
+            <li class="header_li">Gift</li>
+            <li class="header_li"><a href="/src/about.html" class="header_li_a">About</a></li>
+            <img src="/img/logo.png" style="margin-top: 33px; margin-right: 80px;">
+            <li class="header_li">Login</li>
+            <li class="header_li">Members</li>
+            <li class="header_li">Contracts</li>
         </ul>
     </div>
-
-    <img src="/img/main.png">
-
-    <div id="icon_title">
-        <span style="font-size: 10px;">WHAT FOR DINNER</span><br>
-        <strong><span style="font-size: 20px;">FINALLY HAS AN</span></strong><br>
-        <strong><span style="font-size: 20px;">EASY ANWSER</span></strong>
-    </div>
-
-    <div id="icon_box">
-        <p class="icon_box_paragraph">
-            <img src="/img/icon1.png"><br>
-            Lorem ipsum dolor sit amet. consectetur
-            adipisicing elit. sed do eiusmod tempor
-            incididunt ut labore et dolore magna
-            aliqua.
-        </p><p class="icon_box_paragraph">
-            <img src="/img/icon1.png"><br>
-            Lorem ipsum dolor sit amet. consectetur
-            adipisicing elit. sed do eiusmod tempor
-            incididunt ut labore et dolore magna
-            aliqua.
-        </p><p class="icon_box_paragraph">
-            <img src="/img/icon1.png"><br>
-            Lorem ipsum dolor sit amet. consectetur
-            adipisicing elit. sed do eiusmod tempor
-            incididunt ut labore et dolore magna
-            aliqua.
-        </p><p class="icon_box_paragraph">
-            <img src="/img/icon1.png"><br>
-            Lorem ipsum dolor sit amet. consectetur
-            adipisicing elit. sed do eiusmod tempor
-            incididunt ut labore et dolore magna
-            aliqua.
-        </p>
-    </div>
-
-    <div id="chefs">
-        <div class="chefs_paragraph_box">
-            <div class="chefs_paragraph_inerbox" style="margin-top: 80px;">
-                <p>
-                    <strong style="text-decoration: underline;">Title</strong>
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet. consectetur
-                    adipisicing elit. sed do eiusmod tempor
-                    incididunt ut labore et dolore magna
-                    aliqua.
-                </p>
-            </div><img src="/img/chef.png">
-            
-        </div>
-    </div>
-
 
 </body>
 

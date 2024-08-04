@@ -19,7 +19,7 @@
             text-align: center;
         }
         .header_li{
-            display: inline;
+            display: inline-block;
             margin-right: 40px;
             margin-left: 40px;
         }
@@ -31,10 +31,6 @@
         .header_li_a{
             text-decoration: none; 
             color: inherit;
-        }
-        #main_img{
-            height: 464px;
-            background-size: cover;
         }
         #icon_title{
             text-align: center;
@@ -59,17 +55,15 @@
         #chefs{
             height: 304px;
             background-color: #ececec;
-            
         }
         .chefs_total_box{
             width: 771px;
-            margin-left: 25%;
+            margin: 0 auto;
         }
         .chefs_left_box{
             width: 500px;
             float: left;
             margin-right: 30px;
-            margin-top: 10%;
         }
     </style>
 
@@ -77,18 +71,18 @@
 
 <body>
     <div id="header">
-        <ul class="header_ul" style="margin-top: 33px; margin-bottom: 0; padding: 0px;">
-            <li class="header_li">How it works</li>
-            <li class="header_li">Gift</li>
-            <li class="header_li"><a href="/src/about.html" class="header_li_a">About</a></li>
-            <img src="/img/logo.png" style="margin-left: 40px; margin-right: 40px;">
-            <li class="header_li">sign</li>
-            <li class="header_li">Members</li>
-            <li class="header_li">Contracts</li>
+        <ul class="header_ul" style="margin: 0; padding-left: 0px; padding-top: 33px;">
+                <li class="header_li" style="margin-left: -40px;">How it works</li>
+                <li class="header_li">Gift</li>
+                <li class="header_li"><a href="/src/about.html" class="header_li_a">About</a></li>
+                <li class="header_li"><img src="/img/logo.png" style="height: 49px;"></li>    
+                <li class="header_li">Login</li>
+                <li class="header_li">Members</li>
+                <li class="header_li" style="margin-right: -40px;">Contracts</li>
         </ul>
     </div>
 
-    <img src="/img/main.png" id="main_pictur">
+    <img src="/img/main.png" style="height: 464px; width: 100%;">
 
     <div id="icon_title">
         <span style="font-size: 10px;">WHAT FOR DINNER</span><br>
@@ -127,7 +121,7 @@
 
     <div id="chefs">
         <div class="chefs_total_box">
-            <div class="chefs_left_box">
+            <div class="chefs_left_box" style="margin-top: 100px;">
                 <span style="font-weight: bold; text-decoration: underline;">Title</span><br><br>
                 Lorem ipsum dolor sit amet. consectetur
                 adipisicing elit. sed do eiusmod tempor
